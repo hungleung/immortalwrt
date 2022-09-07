@@ -11,21 +11,21 @@ DEVICE_TYPE?=router
 
 # Default packages - the really basic set
 DEFAULT_PACKAGES:=\
-	base-files \
-	ca-bundle \
-	dropbear \
-	fstools \
-	libc \
-	libgcc \
-	libustream-openssl \
-	logd \
-	mtd \
-	netifd \
-	opkg \
-	uci \
-	uclient-fetch \
-	urandom-seed \
-	urngd
+	# base-files \
+	# ca-bundle \
+	# dropbear \
+	# fstools \
+	# libc \
+	# libgcc \
+	# libustream-openssl \
+	# logd \
+	# mtd \
+	# netifd \
+	# opkg \
+	# uci \
+	# uclient-fetch \
+	# urandom-seed \
+	# urngd
 
 ifneq ($(CONFIG_SELINUX),)
 DEFAULT_PACKAGES+=busybox-selinux procd-selinux
@@ -43,25 +43,25 @@ DEFAULT_PACKAGES.nas:=\
 	mdadm
 # For router targets
 DEFAULT_PACKAGES.router:=\
-	dnsmasq-full \
-	firewall \
-	iptables \
-	ppp \
-	ppp-mod-pppoe
+	# dnsmasq-full \
+	# firewall \
+	# iptables \
+	# ppp \
+	# ppp-mod-pppoe
 # For easy usage
 DEFAULT_PACKAGES.tweak:=\
-	block-mount \
-	default-settings-chn \
-	kmod-ipt-raw \
-	kmod-nf-nathelper \
-	kmod-nf-nathelper-extra \
-	luci \
-	luci-app-filetransfer \
-	luci-app-turboacc \
-	luci-compat \
-	luci-lib-base \
-	luci-lib-fs \
-	luci-lib-ipkg
+	# block-mount \
+	# default-settings-chn \
+	# kmod-ipt-raw \
+	# kmod-nf-nathelper \
+	# kmod-nf-nathelper-extra \
+	# luci \
+	# luci-app-filetransfer \
+	# luci-app-turboacc \
+	# luci-compat \
+	# luci-lib-base \
+	# luci-lib-fs \
+	# luci-lib-ipkg
 
 ifneq ($(DUMP),)
   all: dumpinfo
